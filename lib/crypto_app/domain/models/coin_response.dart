@@ -656,7 +656,7 @@ class MarketData {
   final double priceChangePercentage60D;
   final double priceChangePercentage200D;
   final double priceChangePercentage1Y;
-  final int marketCapChange24H;
+  final double marketCapChange24H;
   final double marketCapChangePercentage24H;
   final Map<String, double> priceChange24HInCurrency;
   final Map<String, double> priceChangePercentage1HInCurrency;
@@ -722,7 +722,7 @@ class MarketData {
         priceChangePercentage200D:
             json["price_change_percentage_200d"]?.toDouble(),
         priceChangePercentage1Y: json["price_change_percentage_1y"]?.toDouble(),
-        marketCapChange24H: json["market_cap_change_24h"],
+        marketCapChange24H: json["market_cap_change_24h"]?.toDouble(),
         marketCapChangePercentage24H:
             json["market_cap_change_percentage_24h"]?.toDouble(),
         priceChange24HInCurrency: Map.from(json["price_change_24h_in_currency"])

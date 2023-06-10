@@ -37,7 +37,9 @@ dependencies:
   curved_navigation_bar: ^1.0.3
   cupertino_icons: ^1.0.2
   permission_handler: ^8.3.0
+  clickable_list_wheel_view: ^0.2.0
   flutter_bloc: ^8.1.1
+  flutter_map: ^3.1.0
   geolocator: ^9.0.0
   equatable: ^2.0.5
   shimmer: ^2.0.0
@@ -78,6 +80,9 @@ flutter:
     - assets/coffeeImg/
     - assets/bankImg/
     - assets/flyImg/
+    - assets/foodImg/
+    - assets/burgerImg/
+    - assets/airImg/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -124,6 +129,22 @@ flutter:
       fonts:
         - asset: assets/fonts/GreatVibes-Regular.ttf
           weight: 400
+    - family: ORegular
+      fonts:
+        - asset: assets/fonts/OleoScript-Regular.ttf
+          weight: 400
+    - family: OBold
+      fonts:
+        - asset: assets/fonts/OleoScript-Bold.ttf
+          weight: 800
+    - family: QMedium
+      fonts:
+        - asset: assets/fonts/Quicksand-Medium.ttf
+          weight: 400
+    - family: QBold
+      fonts:
+        - asset: assets/fonts/Quicksand-Bold.ttf
+          weight: 800
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
